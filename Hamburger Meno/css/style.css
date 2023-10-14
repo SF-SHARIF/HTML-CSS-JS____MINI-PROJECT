@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    background-color: #4b4848;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 100px;
+    height: auto;
+}
+
+.nav-logo img {
+    width: 100%;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+}
+
+.nav-item {
+    font-size: 1vw;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.toggler-btn {
+    padding: 16px 10px;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}

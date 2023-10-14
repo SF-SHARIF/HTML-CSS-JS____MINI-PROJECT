@@ -1,0 +1,61 @@
+:root {
+    --hr-width: 30px;
+    --hr-height: 3px;
+    --hr-border-radius: 5px;
+    --hr-bg-color: white;
+    --hr-animation-time: all 0.5s ease-in-out;
+    --before: -8px;
+    --after: 8px;
+}
+
+/* hamburger div */
+.hamburger-icon {
+    position: relative;
+    transition: all  0.2s;
+}
+
+/* .hamburger and before and after */
+.hamburger-icon,
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: '';
+    width: var(--hr-width);
+    height: var(--hr-height);
+    border-radius: var(--hr-border-radius);
+    background-color: var(--hr-bg-color);
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    transition: var(--hr-animation-time);    
+
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    position: absolute;
+    left: 0;
+}
+
+.hamburger-icon::before {
+    top: var(--before);
+}
+
+.hamburger-icon::after {
+    top: var(--after);
+}
+
+
+/* control js class */
+.cross {
+    background-color: transparent;
+
+}
+
+.cross::before {
+    transform: rotate(53deg) translate(6px, 5px);
+}
+
+.cross::after {
+    transform: rotate(-53deg) translate(6px, -5px);
+}
